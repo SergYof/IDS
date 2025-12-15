@@ -1,7 +1,7 @@
 from ..base import Crack
 from scapy.all import sniff, ARP
 
-class MIDMCrack(Crack):
+class MITMCrack(Crack):
     def __init__(self):
         self.arp_table = {}  #stores IP, MAC mapping
 
