@@ -4,13 +4,7 @@ from scapy.all import sniff, TCP, UDP
 class PortScanCrack(Crack):
   store = {}
 
-<<<<<<< HEAD
-  def identify(self):
-    pass
-  
-  
-=======
-  def defend(self, defendip):
+  def identify(self, defendip):
     self.store = {}
     packets = sniff(count=2000)
 
@@ -31,5 +25,3 @@ class PortScanCrack(Crack):
           self.store[src_ip][port] = True
     
     return sorted([k for k,v in self.store.items() if len(v) >= 2000])
-    
->>>>>>> 922df04b775963bdba65daa302ea7ef663fc223c
