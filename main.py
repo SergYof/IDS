@@ -1,4 +1,4 @@
-# from cracks.ARP_Spoofing.arpspoof import ARPSpoofCrack
+from cracks.ARP_Spoofing.arpspoof import ARPSpoofCrack
 # from cracks.MITM.mitm import MITMCrack
 from cracks.Port_Scanning.portscan import PortScanCrack
 from cracks.dns.dnsspoof import DNSSpoofCrack
