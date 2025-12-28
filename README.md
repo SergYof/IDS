@@ -47,12 +47,6 @@ Run the main script with root privileges. The tool will begin sniffing network t
 sudo python3 main.py
 ```
 
-Example output for a detected ARP spoof:
-```
-[!] ARP Spoofing detected!
-    IP 192.168.1.1 changed from 00:11:22:33:44:55 to AA:BB:CC:DD:EE:FF
-```
-
 ## Project Structure
 
 ```
