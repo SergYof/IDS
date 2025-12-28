@@ -25,4 +25,4 @@ class Manager:
             for t in threadList:    # stop the checks
                 t.join()
             
-            # the results must be outputted by th functions
+            # the results must be outputted by the functions
