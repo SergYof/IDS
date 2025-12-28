@@ -8,15 +8,21 @@ ATTACK_CHECK_INTERVAL = 5   # how frequently the chunks are scanned
 
 class Manager:
     def runOnce(self, crack: Crack, packetChunk: PacketList):   # check one packet chunk for one crack type
-        crack.identify(packetList)  # TODO: take action if detected
+        crack.identify(packetChunk)  # TODO: take action if detected
+
 
     def start(self, cracks: List[Crack]):
         # keep running
         while True:
             print("Sniffing packets")
             packetLst = sniff(timeout=ATTACK_CHECK_INTERVAL, quiet=True)    # sniff for some time
-
-            for crack in cracks:
-                # TODO: use threads
-                t = Thread(target=self.runOnce, args=(crack, packetLst))
-                t.run()
+            
+            threadList: list[Thread] = []
+            for crack in cracks:    # launch parallel crack checking
+                threadList.append(Thread(target=self.runOnce, args=(crack, packetLst)))
+                threadList[-1].run()
+            
+            for t in threadList:    # stop the checks
+                t.join()
+            
+            # the results must be outputted by th functions
