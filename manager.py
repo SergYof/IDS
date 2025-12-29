@@ -8,8 +8,13 @@ from IDS import IDPSGui
 ATTACK_CHECK_INTERVAL = 5   # how frequently the chunks are scanned  
 
 class Manager:
-    gui = IDPSGui() # GUI object
+    gui: IDPSGui # GUI object
     
+    def __init__(self):
+        self.gui = IDPSGui() 
+        self.gui.run()
+
+
     def runOnce(self, crack: Crack, packetChunk: PacketList):   # check one packet chunk for one crack type
         alertList = crack.identify(packetChunk)  # get the list of all alerts
         for alert in alertList:
@@ -31,5 +36,5 @@ class Manager:
                 t.join()
             
             # the results must be outputted by the functions
-            # there must be calls to add_alert() function from GUI
+            # this is done inside the threads, so no need to do it here
 
