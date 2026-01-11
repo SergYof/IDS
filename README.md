@@ -60,5 +60,33 @@ Project layout (important files)
 - [bus/packet_bus.py](bus/packet_bus.py), [bus/alert_bus.py](bus/alert_bus.py) — simple in-memory buses
 - [utils/geoip.py](utils/geoip.py) — optional GeoIP lookup
 
+## Project tree
+
+- [README.md](README.md)
+- [main.py](main.py)
+- [manager.py](manager.py)
+- [context.py](context.py)
+- [gui.py](gui.py)
+- .github/
+	- prompts/
+		- [create-readme.prompt.md](.github/prompts/create-readme.prompt.md)
+- bus/
+	- [alert_bus.py](bus/alert_bus.py)
+	- [packet_bus.py](bus/packet_bus.py)
+	- __pycache__/
+- cracks/
+	- [base.py](cracks/base.py)
+	- [portscan.py](cracks/portscan.py)
+	- [arpspoof.py](cracks/arpspoof.py)
+	- [dnsspoof.py](cracks/dnsspoof.py)
+	- __pycache__/
+- engine/
+	- [flow_manager.py](engine/flow_manager.py)
+	- [flow.py](engine/flow.py)
+	- __pycache__/
+- utils/
+	- [geoip.py](utils/geoip.py)
+	- __pycache__/
+
 Maintainers
 - Current maintainer: repository owner (see repository settings). For code-level questions, open an issue or a PR.
