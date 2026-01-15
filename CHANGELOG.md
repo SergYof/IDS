@@ -2,6 +2,9 @@
 
 ## 2026-01-15
 **Documentation & Scope**
+- Changed people's names — *Ithamar*
+- Revise CHANGELOG with new entries and structure — *Ithamar*
+- Added a draft changelog — *Ithamar*
 - Removed any mention of "prevention" — *Ithamar*
 - we have no wiki — *Ithamar*
 - Update README.md — *Lev*
