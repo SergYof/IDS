@@ -68,7 +68,6 @@ To add your own detection module, subclass `Crack` from [cracks/base.py](cracks/
 
 - For help, open an issue or discussion in this repository.
 - See code comments and docstrings for in-line documentation.
-- For advanced usage or troubleshooting, see the [wiki](docs/).
 
 ---
 
