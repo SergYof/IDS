@@ -36,16 +36,11 @@
 
 ### Installation
 
-1. Clone this repository:
-	```sh
-	git clone <your-repo-url>
-	cd IPDS
-	```
-2. Install dependencies:
+1. Install dependencies:
 	```sh
 	python -m pip install scapy geoip2
 	```
-3. (Optional) For GeoIP support, download the MaxMind GeoLite2-City.mmdb and place it in the project root or update [utils/geoip.py](utils/geoip.py) to your DB path.
+2. (Optional) For GeoIP support, download the MaxMind GeoLite2-City.mmdb and place it in the project root or update [utils/geoip.py](utils/geoip.py) to your DB path.
 
 ### Configuration
 
@@ -74,14 +69,6 @@ To add your own detection module, subclass `Crack` from [cracks/base.py](cracks/
 - For help, open an issue or discussion in this repository.
 - See code comments and docstrings for in-line documentation.
 - For advanced usage or troubleshooting, see the [wiki](docs/).
-
----
-
-## Contributing & Maintainers
-
-- Maintained by [Lev Shapiro](mailto:levshapiro@gmail.com)
-- Contributions welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
-- License: See [LICENSE](LICENSE)
 
 ---
 
