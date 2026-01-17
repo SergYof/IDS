@@ -90,8 +90,8 @@
 
 **Misc**
 - added notes because - *Ithamar*
-- פלא ביקשה רווחים אז קיבלה (Pele asked for spaces so she got them) - *Ithamar*
-- היו קונפליקטים כי כולם מטומטמים (There were conflicts because everyone is stupid) - *Ithamar*
+- פלא ביקשה רווחים אז קיבלה - *Ithamar*
+- היו קונפליקטים כי כולם מטומטמים - *Ithamar*
 
 ## 2025-12-14
 **Initialization**
