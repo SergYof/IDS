@@ -35,7 +35,6 @@ class Manager:
             "time": time(),
             "attacker": attacker,
             "victim": "N/A",
-            "geo": lookup(attacker) if hasattr(crack, 'name') and 'ARP' not in crack.name else "Local MAC",
             "details": details
         })
 

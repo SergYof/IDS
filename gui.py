@@ -228,7 +228,7 @@ class IDSApp(tk.Tk):
             alert_time = datetime.fromtimestamp(a['time']).strftime("%Y-%m-%d %H:%M:%S")
             self.alerts_text.insert(tk.END, f"⏰ {alert_time}\n", "time")
             self.alerts_text.insert(tk.END, f"🎯 ATTACK: {a['attack']}\n", "attack")
-            self.alerts_text.insert(tk.END, f"👤 ATTACKER: {a['attacker']} ({a['geo']})\n", "attacker")
+            self.alerts_text.insert(tk.END, f"👤 ATTACKER: {a['attacker']}\n", "attacker")
             self.alerts_text.insert(tk.END, f"📝 DETAILS: {a['details']}\n", "details")
         self.alerts_text.see(tk.END)
         self.alerts_text.config(state=tk.DISABLED)

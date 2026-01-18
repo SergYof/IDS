@@ -28,6 +28,8 @@ class ARPMitmCrack(Crack):
         ip = arp.psrc
 
         entry = self.state[mac]
+
+        assert type(entry["claims"]) == deque # because Python yells at me (Sergey)
         entry["claims"].append((now, ip))
 
         while entry["claims"] and now - entry["claims"][0][0] > self.WINDOW:
