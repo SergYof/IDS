@@ -91,5 +91,4 @@ To add your own detection module, subclass `Crack` from [cracks/base.py](cracks/
 	- [arpspoof.py](cracks/arpspoof.py)
 	- [dnsspoof.py](cracks/dnsspoof.py)
 	- [mitm.py](cracks/mitm.py)
-- utils/
-	- [geoip.py](utils/geoip.py)
+
